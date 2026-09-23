@@ -34,3 +34,14 @@ function hideModal(){
 closeModal.addEventListener('click', hideModal);
 modal.addEventListener('click', e => { if(e.target === modal) hideModal(); });
 document.addEventListener('keydown', e => { if(e.key === 'Escape') hideModal(); });
+
+function playShort(element, videoId) {
+  element.innerHTML = `
+    <iframe
+      src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+      title="YouTube Shorts"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+  `;
+}
