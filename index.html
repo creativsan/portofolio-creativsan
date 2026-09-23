@@ -1,119 +1,443 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio Kang Desainer — Desain Grafis & Video Editor.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Portfolio desain grafis dan video editing.">
   <title>Creativsan — Portfolio</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="noise"></div>
+
+  <!-- ================= HEADER ================= -->
 
   <header class="hero">
-    <div class="brand-mark">KD</div>
-    <div class="hero-inner">
-      <p class="eyebrow">DESAIN GRAFIS & VIDEO EDITOR</p>
-     <h1>Creativsan</h1>
-      <p class="intro">Creative design, video editing, dan visual content untuk membantu brand tampil lebih profesional..</p>
 
-      <div class="socials" aria-label="Sosial media">
-        <a href="https://youtube.com/" target="_blank" aria-label="YouTube">YT</a>
-        <a href="https://instagram.com/" target="_blank" aria-label="Instagram">IG</a>
-        <a href="https://tiktok.com/" target="_blank" aria-label="TikTok">TK</a>
-        <a href="https://wa.me/6281234567890" target="_blank" aria-label="WhatsApp">WA</a>
-        <a href="https://facebook.com/" target="_blank" aria-label="Facebook">FB</a>
-        <a href="mailto:emailkamu@example.com" aria-label="Email">@</a>
+    <div class="hero-inner">
+
+      <p class="eyebrow">DESAIN GRAFIS & VIDEO EDITOR</p>
+
+      <h1>
+        Creativ<span>san</span>
+      </h1>
+
+      <p class="intro">
+        Membantu membuat desain visual, konten sosial media,
+        video editing, dan berbagai kebutuhan kreatif lainnya.
+      </p>
+
+      <div class="socials">
+
+        <a href="https://youtube.com/" target="_blank">YT</a>
+
+        <a href="https://instagram.com/" target="_blank">IG</a>
+
+        <a href="https://tiktok.com/" target="_blank">TK</a>
+
+        <a href="https://wa.me/6281234567890" target="_blank">WA</a>
+
       </div>
+
     </div>
+
   </header>
 
+
+  <!-- ================= PORTFOLIO ================= -->
+
   <main>
+
     <section class="portfolio">
+
       <div class="section-head">
+
         <div>
-          <p class="eyebrow">KOLEKSI KARYA</p>
-          <h2>Portfolio</h2>
-          <p>Video interaktif, motion graphic & desain grafis.</p>
+
+          <p class="eyebrow">
+            KOLEKSI KARYA
+          </p>
+
+          <h2>
+            Portfolio
+          </h2>
+
+          <p>
+            Video editing, desain grafis,
+            social media content dan creative visual.
+          </p>
+
         </div>
-        <div class="tabs" role="tablist">
-          <button class="tab active" data-filter="all">Semua</button>
-          <button class="tab" data-filter="video">Video</button>
-          <button class="tab" data-filter="design">Desain Grafis</button>
+
+
+        <!-- FILTER -->
+
+        <div class="tabs">
+
+          <button class="tab active" data-filter="all">
+            Semua
+          </button>
+
+          <button class="tab" data-filter="video">
+            Video
+          </button>
+
+          <button class="tab" data-filter="design">
+            Desain Grafis
+          </button>
+
         </div>
+
       </div>
+
+
+
+      <!-- ================= GRID PORTFOLIO ================= -->
 
       <div class="grid" id="portfolioGrid">
-        <article class="card" data-type="video">
-          <div class="video-card" onclick="playShort(this, 'adQG_8Y12jQ')">
-           <img
-             src="https://img.youtube.com/vi/AbCd12345/maxresdefault.jpg"
-             alt="YouTube Shorts">
-           <div class="play-button">▶</div>
-           <span class="tag">SHORT VIDEO</span>
+
+
+        <!-- ================= VIDEO 1 ================= -->
+
+        <article
+          class="card video-card-item"
+          data-type="video"
+        >
+
+          <div
+            class="youtube-card"
+            onclick="playYoutube(this, 'adQG_8Y12jQ')"
+          >
+
+            <img
+              src="https://i.ytimg.com/vi/adQG_8Y12jQ/hqdefault.jpg"
+              alt="Video YouTube"
+            >
+
+            <div class="youtube-overlay">
+
+              <div class="youtube-play">
+                ▶
+              </div>
+
+            </div>
+
+            <span class="tag">
+              YOUTUBE VIDEO
+            </span>
+
           </div>
+
+          <div class="card-info">
+
+            <h3>
+              Video Creative Content
+            </h3>
+
+            <p>
+              Video editing dan creative content.
+            </p>
+
+          </div>
+
         </article>
 
-        <article class="card" data-type="video" data-title="Video AI — Creative Content" data-desc="Tambahkan hasil video AI atau iklan kreatif kamu di sini.">
-          <button class="card-media gradient-two" aria-label="Buka project">
-            <span class="tag">VIDEO AI</span><span class="play">▶</span><strong>Creative<br>Content</strong>
-          </button>
+
+
+        <!-- ================= VIDEO 2 ================= -->
+
+        <article
+          class="card video-card-item"
+          data-type="video"
+        >
+
+          <div
+            class="youtube-card"
+            onclick="playYoutube(this, 'adQG_8Y12jQ')"
+          >
+
+            <img
+              src="https://i.ytimg.com/vi/adQG_8Y12jQ/hqdefault.jpg"
+              alt="Video YouTube"
+            >
+
+            <div class="youtube-overlay">
+
+              <div class="youtube-play">
+                ▶
+              </div>
+
+            </div>
+
+            <span class="tag">
+              SHORT VIDEO
+            </span>
+
+          </div>
+
+          <div class="card-info">
+
+            <h3>
+              Short Video
+            </h3>
+
+            <p>
+              Konten video pendek untuk sosial media.
+            </p>
+
+          </div>
+
         </article>
 
-        <article class="card" data-type="design" data-title="Desain Sosial Media" data-desc="Masukkan desain feed, carousel, poster atau materi promosi.">
-          <button class="card-media gradient-three" aria-label="Buka project">
-            <span class="tag">DESAIN GRAFIS</span><strong>Social<br>Media</strong>
-          </button>
+
+
+        <!-- ================= DESIGN 1 ================= -->
+
+        <article
+          class="card design-card"
+          data-type="design"
+          onclick="openCarousel(0)"
+        >
+
+          <div class="design-cover">
+
+            <img
+              src="assets/design1.jpg"
+              alt="Desain Social Media"
+            >
+
+            <div class="design-overlay">
+
+              <span>
+                LIHAT DESAIN →
+              </span>
+
+            </div>
+
+            <span class="tag">
+              DESAIN GRAFIS
+            </span>
+
+          </div>
+
+          <div class="card-info">
+
+            <h3>
+              Social Media Design
+            </h3>
+
+            <p>
+              Carousel dan desain konten sosial media.
+            </p>
+
+          </div>
+
         </article>
 
-        <article class="card" data-type="design" data-title="Branding & Visual" data-desc="Tampilkan identitas visual, branding atau materi kampanye.">
-          <button class="card-media gradient-four" aria-label="Buka project">
-            <span class="tag">BRANDING</span><strong>Visual<br>Identity</strong>
-          </button>
+
+
+        <!-- ================= DESIGN 2 ================= -->
+
+        <article
+          class="card design-card"
+          data-type="design"
+          onclick="openCarousel(1)"
+        >
+
+          <div class="design-cover">
+
+            <img
+              src="assets/design4.jpg"
+              alt="Branding Design"
+            >
+
+            <div class="design-overlay">
+
+              <span>
+                LIHAT DESAIN →
+              </span>
+
+            </div>
+
+            <span class="tag">
+              BRANDING
+            </span>
+
+          </div>
+
+          <div class="card-info">
+
+            <h3>
+              Branding Design
+            </h3>
+
+            <p>
+              Visual identity dan kebutuhan branding.
+            </p>
+
+          </div>
+
         </article>
 
-        <article class="card" data-type="video" data-title="Motion Graphic" data-desc="Tampilkan motion graphic, animasi atau opening video.">
-          <button class="card-media gradient-five" aria-label="Buka project">
-            <span class="tag">MOTION GRAPHIC</span><span class="play">▶</span><strong>Motion<br>Graphic</strong>
-          </button>
+
+
+        <!-- ================= DESIGN 3 ================= -->
+
+        <article
+          class="card design-card"
+          data-type="design"
+          onclick="openCarousel(2)"
+        >
+
+          <div class="design-cover">
+
+            <img
+              src="assets/design7.jpg"
+              alt="Campaign Design"
+            >
+
+            <div class="design-overlay">
+
+              <span>
+                LIHAT DESAIN →
+              </span>
+
+            </div>
+
+            <span class="tag">
+              CAMPAIGN
+            </span>
+
+          </div>
+
+          <div class="card-info">
+
+            <h3>
+              Campaign Design
+            </h3>
+
+            <p>
+              Desain campaign dan promotional content.
+            </p>
+
+          </div>
+
         </article>
 
-        <article class="card" data-type="design" data-title="Campaign Design" data-desc="Tampilkan campaign visual yang paling kamu banggakan.">
-          <button class="card-media gradient-six" aria-label="Buka project">
-            <span class="tag">CAMPAIGN</span><strong>Campaign<br>Design</strong>
-          </button>
-        </article>
+
       </div>
+
     </section>
+
+
+
+    <!-- ================= ABOUT ================= -->
 
     <section class="about">
+
       <div>
-        <p class="eyebrow">KENAPA KAMI?</p>
-        <h2>Visual yang<br><span>punya tujuan.</span></h2>
+
+        <p class="eyebrow">
+          TENTANG
+        </p>
+
+        <h2>
+          Visual yang
+          <br>
+          <span>punya tujuan.</span>
+        </h2>
+
       </div>
+
       <div class="about-copy">
-        <p>Desain bukan cuma soal terlihat bagus. Setiap visual dibuat untuk menyampaikan pesan, memperkuat brand, dan membantu konten lebih mudah dipahami audiens.</p>
-        <a class="outline-btn" href="https://wa.me/6281234567890?text=Halo%20Kang%20Desainer%2C%20saya%20ingin%20konsultasi%20project." target="_blank">Diskusikan Project ↗</a>
+
+        <p>
+          Setiap desain dan video dibuat dengan memperhatikan
+          konsep, pesan, dan kebutuhan audiens. Mulai dari
+          konten sosial media hingga kebutuhan visual brand.
+        </p>
+
+        <a
+          class="outline-btn"
+          href="https://wa.me/6281234567890"
+          target="_blank"
+        >
+          Diskusikan Project ↗
+        </a>
+
       </div>
+
     </section>
+
   </main>
 
-  <a class="floating-wa" href="https://wa.me/6281234567890?text=Halo%20Kang%20Desainer%2C%20saya%20ingin%20konsultasi%20project." target="_blank">
-    <span>◔</span> Pesan via WhatsApp
-  </a>
 
-  <div class="modal" id="modal" aria-hidden="true">
-    <div class="modal-box">
-      <button class="close" id="closeModal" aria-label="Tutup">×</button>
-      <p class="eyebrow" id="modalTag">PROJECT</p>
-      <h3 id="modalTitle"></h3>
-      <p id="modalDesc"></p>
-      <a class="outline-btn" href="https://wa.me/6281234567890" target="_blank">Tanyakan Project ↗</a>
+
+  <!-- ================= CAROUSEL ================= -->
+
+  <div
+    class="carousel"
+    id="carousel"
+  >
+
+    <button
+      class="carousel-close"
+      onclick="closeCarousel()"
+    >
+      ×
+    </button>
+
+
+    <button
+      class="carousel-prev"
+      onclick="previousSlide()"
+    >
+      ‹
+    </button>
+
+
+    <div class="carousel-content">
+
+      <img
+        id="carouselImage"
+        src=""
+        alt="Portfolio Design"
+      >
+
+      <div
+        class="carousel-counter"
+        id="carouselCounter"
+      >
+        1 / 1
+      </div>
+
     </div>
+
+
+    <button
+      class="carousel-next"
+      onclick="nextSlide()"
+    >
+      ›
+    </button>
+
   </div>
 
-  <footer>© 2026 Kang Desainer · Desain Grafis & Video Editor</footer>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    © 2026 Creativsan · Desain Grafis & Video Editor
+
+  </footer>
+
+
 
   <script src="script.js"></script>
+
 </body>
 </html>
