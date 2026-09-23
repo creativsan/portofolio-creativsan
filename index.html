@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio Kang Desainer — Desain Grafis & Video Editor.">
+  <title>Kang Desainer — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="hero">
+    <div class="brand-mark">KD</div>
+    <div class="hero-inner">
+      <p class="eyebrow">DESAIN GRAFIS & VIDEO EDITOR</p>
+      <h1>Kang<br><span>Desainer</span></h1>
+      <p class="intro">Apa pun kebutuhan visual kamu, mulai dari desain hingga video editing, kami bantu buat sesuai konsep yang kamu inginkan.</p>
+
+      <div class="socials" aria-label="Sosial media">
+        <a href="https://youtube.com/" target="_blank" aria-label="YouTube">YT</a>
+        <a href="https://instagram.com/" target="_blank" aria-label="Instagram">IG</a>
+        <a href="https://tiktok.com/" target="_blank" aria-label="TikTok">TK</a>
+        <a href="https://wa.me/6281234567890" target="_blank" aria-label="WhatsApp">WA</a>
+        <a href="https://facebook.com/" target="_blank" aria-label="Facebook">FB</a>
+        <a href="mailto:emailkamu@example.com" aria-label="Email">@</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="portfolio">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">KOLEKSI KARYA</p>
+          <h2>Portfolio</h2>
+          <p>Video interaktif, motion graphic & desain grafis.</p>
+        </div>
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-filter="all">Semua</button>
+          <button class="tab" data-filter="video">Video</button>
+          <button class="tab" data-filter="design">Desain Grafis</button>
+        </div>
+      </div>
+
+      <div class="grid" id="portfolioGrid">
+        <article class="card" data-type="video" data-title="Short Video — Konten Produk" data-desc="Ganti kartu ini dengan thumbnail dan link video kamu.">
+          <button class="card-media gradient-one" aria-label="Buka project">
+            <span class="tag">SHORT VIDEO</span><span class="play">▶</span><strong>Konten<br>Produk</strong>
+          </button>
+        </article>
+
+        <article class="card" data-type="video" data-title="Video AI — Creative Content" data-desc="Tambahkan hasil video AI atau iklan kreatif kamu di sini.">
+          <button class="card-media gradient-two" aria-label="Buka project">
+            <span class="tag">VIDEO AI</span><span class="play">▶</span><strong>Creative<br>Content</strong>
+          </button>
+        </article>
+
+        <article class="card" data-type="design" data-title="Desain Sosial Media" data-desc="Masukkan desain feed, carousel, poster atau materi promosi.">
+          <button class="card-media gradient-three" aria-label="Buka project">
+            <span class="tag">DESAIN GRAFIS</span><strong>Social<br>Media</strong>
+          </button>
+        </article>
+
+        <article class="card" data-type="design" data-title="Branding & Visual" data-desc="Tampilkan identitas visual, branding atau materi kampanye.">
+          <button class="card-media gradient-four" aria-label="Buka project">
+            <span class="tag">BRANDING</span><strong>Visual<br>Identity</strong>
+          </button>
+        </article>
+
+        <article class="card" data-type="video" data-title="Motion Graphic" data-desc="Tampilkan motion graphic, animasi atau opening video.">
+          <button class="card-media gradient-five" aria-label="Buka project">
+            <span class="tag">MOTION GRAPHIC</span><span class="play">▶</span><strong>Motion<br>Graphic</strong>
+          </button>
+        </article>
+
+        <article class="card" data-type="design" data-title="Campaign Design" data-desc="Tampilkan campaign visual yang paling kamu banggakan.">
+          <button class="card-media gradient-six" aria-label="Buka project">
+            <span class="tag">CAMPAIGN</span><strong>Campaign<br>Design</strong>
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="about">
+      <div>
+        <p class="eyebrow">KENAPA KAMI?</p>
+        <h2>Visual yang<br><span>punya tujuan.</span></h2>
+      </div>
+      <div class="about-copy">
+        <p>Desain bukan cuma soal terlihat bagus. Setiap visual dibuat untuk menyampaikan pesan, memperkuat brand, dan membantu konten lebih mudah dipahami audiens.</p>
+        <a class="outline-btn" href="https://wa.me/6281234567890?text=Halo%20Kang%20Desainer%2C%20saya%20ingin%20konsultasi%20project." target="_blank">Diskusikan Project ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <a class="floating-wa" href="https://wa.me/6281234567890?text=Halo%20Kang%20Desainer%2C%20saya%20ingin%20konsultasi%20project." target="_blank">
+    <span>◔</span> Pesan via WhatsApp
+  </a>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close" id="closeModal" aria-label="Tutup">×</button>
+      <p class="eyebrow" id="modalTag">PROJECT</p>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <a class="outline-btn" href="https://wa.me/6281234567890" target="_blank">Tanyakan Project ↗</a>
+    </div>
+  </div>
+
+  <footer>© 2026 Kang Desainer · Desain Grafis & Video Editor</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
